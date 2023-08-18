@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #18191C;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 900px;
+    height: 900px;
+    margin: 0 auto;
+    margin-top: 150px;
+    background-color:transparent;
+    border-radius: 25px;
+    transform-origin: center top;
+}
+
+.wrapper {
+    display: flex;
+    width: 600px;
+    height: 600px;
+    margin-left: 50px;
+}
+
+.wrapper1 {
+    justify-content: flex-end;
+}
+
+.child {
+    border-radius: 37,5px;
+}
+
+
+.box-1{
+    width: 75px;
+    height: 75px;
+    background-color: #F297AE;
+    animation-name: boxAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+
+.box-2{
+    width: 300px;
+    height: 300px;
+    background-color:#2E9AFF;
+}
+
+@keyframes boxAnimation{
+    from {
+        width: 75px;
+        height: 75px;
+        border-radius: 100%;
+        background-color: #F498AD;
+    }
+
+    50% {
+        width: 75px;
+        height: 300px;
+        background-color: #7F6EDB;
+    }
+
+    to {
+        width: 300px;
+        height: 300px;
+        background-color: #2E9AFF;
+    }
+}
